@@ -1,8 +1,7 @@
 #!/home/ocean/anaconda3/bin/python3
 from numpy import cos, arccos, sin, arctan, tan, pi, sqrt, e; from numpy import array as ary; import numpy as np; tau = 2*pi
 import random as rn
-from
- numbers import Number
+from numbers import Number
 
 
 #Assuming all distributions are independent
@@ -15,14 +14,12 @@ class distribution:	#note that I initiate it with σ square, i.e. vari
 		self.transformed = False
 	def sample(self):
 			sample = rn.gauss(self.mean, self.standard_dev)
-		
 			return sample
 	def P(self, x):
-		assert type(x)==float
-		rt isinstance(x, Number)
+		#assert type(x)==float
+		assert isinstance(x, Number)
 		s2 = self.vari
-		μ =
-		 self.mean
+		μ = self.mean
 		if s2!=0:
 			return 1/(sqrt(tau*s2)) * e** ((x-μ)**2/(-2*s2))
 		else:
@@ -151,3 +148,4 @@ if __name__=="__main__":
 	scaled_transformed_PDF = df_inv*transformed_PDF[:-1]	#THIS WORKS! It scales down the part of the PDF that gets stretched out more.
 	ax2.plot(x_cal[:-1], scaled_transformed_PDF, label = "PDF after\ntransformation")
 	ax2.set_ylim(0,max(scaled_transformed_PDF))
+	plt.show()	
