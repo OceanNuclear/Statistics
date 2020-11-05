@@ -1,4 +1,3 @@
-#!/home/ocean/anaconda3/bin/python3
 from numpy import cos, arccos, sin, arctan, tan, pi, sqrt, e; from numpy import array as ary; import numpy as np; tau = 2*pi
 import random as rn
 from numbers import Number
