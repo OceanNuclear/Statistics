@@ -36,4 +36,5 @@ if __name__=="__main__":
 	ax2.plot(x_cal[:-1], scaled_transformed_PDF, label = "PDF after\ntransformation")
 	ax2.set_ylim(0,max(scaled_transformed_PDF))
 	ax.legend()
-	plt.savefig('Y_dist_inverse_Px.png')
+	# plt.savefig('Y_dist_inverse_Px.png')
+	plt.show()
